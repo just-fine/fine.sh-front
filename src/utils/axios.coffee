@@ -5,7 +5,7 @@ HOST = if process.env.NODE_ENV is 'development' then \
 
 instance = axios.create
   baseURL: HOST
-  timeout: 20000,
+  timeout: 30000,
   headers:
     'Content-Type': 'application/json'
   validateStatus: (status) -> 100 < status < 510

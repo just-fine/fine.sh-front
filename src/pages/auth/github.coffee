@@ -1,12 +1,16 @@
 import service from './service'
 
+DEFAULT_STATUS = '正在验证中...'
 export default
   name: 'github'
   
   data: ->
     user: null
-    status: 'validating...'
-  
+    status: DEFAULT_STATUS
+
+  computed:
+    is_loading: -> @status is DEFAULT_STATUS
+
   mounted: () ->
     { code, command_id } = @$route.query
     @command_id = command_id
@@ -34,5 +38,16 @@ export default
 
   render: (h) ->
     <div>
-      { @status }
+      <repo-slogan/>
+      <div>
+        <h2>正在校验您的信息</h2>
+        <pre>
+          我们正在向 github 校验您的信息，这可能需要一些时间。
+        </pre>
+        <div class=" alert alert-info">
+          { @is_loading and (<span class="loading"></span>)}
+          { @status }
+        </div>
+      </div>
+      <repo-summary/>
     </div>

@@ -2,7 +2,7 @@ import vue from 'vue'
 import app from './app'
 import routers from './routers'
 import component from './components'
-import 'styles/shared/index.scss'
+import 'hack'
 
 vue.config?.productionTip = false
 component vue

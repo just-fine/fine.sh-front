@@ -1,6 +1,7 @@
 components = [
   require '../pages/welcome'
   require './summary'
+  require './slogan'
 ]
 
 export default (vue) ->
