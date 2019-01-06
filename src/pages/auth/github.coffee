@@ -28,6 +28,7 @@ export default
       status_map =
         bad_request: '验证信息已经过期'
         server_error: '系统错误'
+        forbidden: '鉴权失败'
       this.status = status_map[name] or '未知错误'
       
     # update cli token require authorized

@@ -1,11 +1,11 @@
 {
   "name": "@fine.sh/front",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "private": false,
   "scripts": {
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "publish": "npm run build && npm publish --access=public"
+    "deploy": "npm run build && npm publish --access=public"
   },
   "files": [
     "dist/",
