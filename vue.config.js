@@ -5,5 +5,7 @@ module.exports = {
     config.resolve.alias
       .set('styles', path.join(__dirname, 'src/styles'))
   },
-  baseUrl: 'https://cdn.jsdelivr.net/npm/@fine.sh/front/dist/',
+  baseUrl: process.env.NODE_ENV === 'production'
+      ? 'https://cdn.jsdelivr.net/npm/@fine.sh/front/dist/'
+      : '/'
 }
