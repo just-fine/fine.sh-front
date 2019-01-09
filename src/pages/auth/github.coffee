@@ -28,6 +28,7 @@ export default
       status_map =
         bad_request: '验证信息已经过期'
         server_error: '系统错误'
+        forbidden: '鉴权失败'
       this.status = status_map[name] or '未知错误'
       
     # update cli token require authorized
@@ -45,7 +46,7 @@ export default
           我们正在向 github 校验您的信息，这可能需要一些时间。
         </pre>
         <div class=" alert alert-info">
-          { @is_loading and (<span class="loading"></span>)}
+          { @is_loading and (<span class="loading"></span>) }
           { @status }
         </div>
       </div>

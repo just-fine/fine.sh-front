@@ -1,11 +1,12 @@
 import axios from 'axios'
 
 HOST = if process.env.NODE_ENV is 'development' then \
-  'http://127.0.0.1:1337/api/v1' else 'https://api.fine.sh/api/v1'
+  '/api/v1' else 'https://api.fine.sh/api/v1'
 
 instance = axios.create
   baseURL: HOST
   timeout: 30000,
+  withCredentials: true
   headers:
     'Content-Type': 'application/json'
   validateStatus: (status) -> 100 < status < 510
