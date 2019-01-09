@@ -62,7 +62,7 @@ export default
 
       <div class="alert alert-success">
         <p>fine 目前仍旧处于测试版本，我们会不断补充更多的功能，同时也尽可能的提高它的健壮性。</p>
-        <p>你可以在 <a href="https://github.com/WittBulter/fine.sh-cli/issues/new" target="_blank">这里</a> 留下建议和反馈。</p>
+        <p>你可以在 <a href="https://github.com/just-fine/fine.sh-cli/issues/new" target="_blank">这里</a> 留下建议和反馈。</p>
       </div>
 
 
