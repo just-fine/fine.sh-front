@@ -1,0 +1,8 @@
+{
+  "name": "fine",
+  "version": 2,
+  "alias": "fine.sh",
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build", "config": { "distDir": "dist" } }
+  ]
+}
