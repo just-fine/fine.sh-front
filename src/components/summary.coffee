@@ -1,4 +1,4 @@
-import './component.scss'
+import './component.styl'
 
 export default
   name: 'repo-summary'

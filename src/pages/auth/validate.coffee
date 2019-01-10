@@ -1,6 +1,5 @@
 import service from './service'
 import { apis } from '../../constants'
-import './validate.scss'
 
 export default
   name: 'validate'
@@ -13,7 +12,6 @@ export default
     do @check_user
 
   methods:
-    
     check_user: () ->
       @user = await do service.find_user
   

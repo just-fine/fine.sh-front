@@ -20,8 +20,8 @@
     "@vue/cli-service": "^3.2.0",
     "coffee-loader": "^0.9.0",
     "coffeescript": "^2.3.2",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
     "vue-cli-plugin-coffeescript": "0.0.3",
     "vue-template-compiler": "^2.5.17"
   },
