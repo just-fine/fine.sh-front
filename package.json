@@ -3,47 +3,27 @@
   "version": "0.0.7",
   "private": false,
   "scripts": {
-    "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "deploy": "npm run build && npm publish --access=public",
     "now-build": "npm run build",
-    "deploy": "npm run build && npm publish --access=public"
+    "start": "vue-cli-service serve"
   },
-  "files": [
-    "dist/",
-    "README.md"
-  ],
   "dependencies": {
     "axios": "^0.18.0",
     "hack": "^0.8.1",
     "vue": "^2.5.17",
+    "vue-i18n": "^8.7.0",
     "vue-router": "^3.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.2.0",
-    "@vue/cli-plugin-eslint": "^3.2.0",
     "@vue/cli-service": "^3.2.0",
-    "babel-eslint": "^10.0.1",
     "coffee-loader": "^0.9.0",
     "coffeescript": "^2.3.2",
-    "eslint": "^5.8.0",
-    "eslint-config-haifengfe": "^0.1.5",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "vue-cli-plugin-coffeescript": "0.0.3",
     "vue-template-compiler": "^2.5.17"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "haifengfe/vue"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
   },
   "postcss": {
     "plugins": {
@@ -54,5 +34,9 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
+  ],
+  "files": [
+    "dist/",
+    "README.md"
   ]
 }
