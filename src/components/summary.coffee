@@ -20,5 +20,5 @@ export default
     <div class="summary">
       <a href="javascript:;" on-click={@replace} class="cell" target="_blank">{@label}</a>
       <a href="https://github.com/just-fine/fine.sh-cli" class="cell" target="_blank">See on github</a>
-      <a href="https://fine.sh/" class="cell" target="_blank">home page</a>
+      <a href="https://github.com/just-fine/fine.sh-cli#thanks" class="cell" target="_blank">Thanks</a>
     </div>
