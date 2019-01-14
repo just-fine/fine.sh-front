@@ -4,8 +4,7 @@
   "private": false,
   "scripts": {
     "build": "vue-cli-service build",
-    "deploy": "npm run build && npm publish --access=public",
-    "now-build": "npm run build",
+    "now-build": "NODE_ENV=production npm run build",
     "start": "vue-cli-service serve"
   },
   "dependencies": {
