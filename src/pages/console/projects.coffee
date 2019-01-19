@@ -11,7 +11,7 @@ export default
     <div class={$style.content}>
       <div class="alert alert-info">project count: {@projects.length}, today: {@today}</div>
       <ul>{
-        (<li>
+        (<li class={$style.item}>
           <a href={"https://#{project.repo_name}.fine.sh"} target="_blank">{project.repo_name}</a>
           <span class={$style.date}>create_at {@date project.created_at}</span>
           <a on-click={@go_block.bind @, project.user_id}>see author</a>

@@ -45,7 +45,7 @@ export default
 
     render_projects: (h) ->
       <ul>{
-        (<li>
+        (<li class={$style.item}>
           <a href={"https://#{project.repo_name}.fine.sh"} target="_blank">{project.repo_name}</a>
           <span class={$style.date}>create_at {@date project.created_at}</span>
         </li>) for project in @projects

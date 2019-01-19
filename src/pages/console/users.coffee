@@ -10,7 +10,7 @@ export default
   render: (h) ->
     <ul>
     {
-      (<li>
+      (<li class={$style.item}>
         <a href={"https://github.com/#{user.github_name}"} target="_blank">{user.github_name}</a>
         <span class={$style.date}>location {user.location or 'none'}</span>
         <span class={$style.date}>carete_at {@date user.created_at}</span>
