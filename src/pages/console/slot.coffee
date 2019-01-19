@@ -9,7 +9,12 @@ export default
     menus: [
       { name: 'projects', active: yes }
       { name: 'users' }
+      { name: 'block' }
     ]
+
+  beforeRouteUpdate: (to, from, next) ->
+    @set_active to.name
+    do next
 
   render: (h) ->
     <div class={$style.console}>
@@ -26,6 +31,7 @@ export default
 
 
   mounted: ->
+    @set_active @$route.name
     result = await do service.check_admin
     return do @back if not result.$ok
 
@@ -36,8 +42,13 @@ export default
     toggle: (name) ->
       @$router.push
         name: "console_#{name}"
+
+    set_active: (name) ->
+      console.log name
+      is_current = (menu_name, router_name) ->
+        router_name is "console_#{menu_name}"
       @menus = @menus.map (menu) ->
-        status = (menu.name is name and yes) or no
+        status = ((is_current menu.name, name) and yes) or no
         Object.assign {}, menu, { active: status }
 
 

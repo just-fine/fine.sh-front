@@ -4,8 +4,6 @@ export default
   
   USER: '/user'
 
-  ADMIN: '/user/admin'
-
   GITHUB_AUTH: 'https://github.com/login/oauth/authorize'
   
   GITHUB_AUTH_PARAMS:
@@ -14,4 +12,12 @@ export default
     client_id: '5139eb365ba3cd999f4f'
 
   PROJECTS: '/projects/all'
+
+  ADMIN: '/users/admin'
+
+  ALL_USERS: '/users/all'
+
+  USERS: '/users'
+
+
   
