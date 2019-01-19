@@ -23,6 +23,7 @@ export default
 
   mounted: ->
     @id = @$route.params.id
+    return if not @id
     result = await service.find_user_by_id @id
     @user = result.user
     @projects = result.projects
