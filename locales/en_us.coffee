@@ -1,20 +1,21 @@
 export default
   welcome:
     title1: 'What is Fine'
-    quote1: 'Fine is a tool to help you generate document sites from individual documents without a server required on your part. It is fast, safe and easy to use, plus you don’t have to worry about neither style nor implementation at all. '
+    quote1: 'Fine is a tool to help you generate static website. It is fast, safe and easy to use, plus you don’t have to worry about neither style nor implementation at all. '
     quote2: 'You can even use Fine to start your own blog, as it provides customized domains to each site it generates.'
-    quote3: 'And of course, as a rule of thumb, Fine is always free.'
+    quote3: 'And of course, Fine is always free.'
 
     title2: 'How to use Fine'
-    usage1: 'First you will need to have a folder that contains at least one markdown (.md) file. Fine’s job is to help you convert and post contents of these files to your customized sites.'
+    required: 'Fine required {nodejs}.'
+    usage1: 'First you will need to have a folder that contains at least one markdown (.md) file. Fine’s job is to help you convert and post to static website.'
     usage2: 'Once you’re in the directory for your designated folder, enter the following command:'
     usage3: 'That’s it?'
-    usage4: 'Yep. cool? “npx” allows you to run a temporary package, which will be deleted right after each use. Use this command to try and experience how Fine works. Doesn’t hurt to try, huh?'
+    usage4: 'Yep. cool? "npx" is a command of NPM, “npx” allows you to run a temporary package, which will be deleted right after each use. Use this command to try and experience how Fine works. Doesn’t hurt to try, huh?'
     usage5: 'If you enjoy Fine and would like to use it on a more regular basis, here is the way to install it'
 
     title3: 'User Manual'
-    guide1: 'You can choose to ask Fine to implement a website straight up, or fine.sh/cli can generate a configuration file for a customized domain.'
-    guide2: 'For example, if your configuration file has your project called “love”, after the run through Fine will create a domain “love.fine.sh”. This domain is yours, and yours only. '
+    guide1: 'You can deploy it immediately, or generate a configuration file for a customized domain.'
+    guide2: 'For example, if your configuration file has your project called “love”, after run command will create a domain “love.fine.sh”. This domain is yours, and yours only. '
     guide3: 'Now what if I changed something in my contents? No worries, enter again: '
     guide4: 'Damn, isn’t that easy. '
 
@@ -23,6 +24,7 @@ export default
     command2: 'see user sites'
     command3: 'see user info'
     command4: 'remove a site according to instructions'
+    command5: 'report a bug'
 
     title5: 'Rules and disclaimers'
     rule1: 'Although you can use fine.sh to post and generate sites for free, you are still the sole responsible entity for the contents you post.'

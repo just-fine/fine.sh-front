@@ -22,8 +22,8 @@ export default
       <br/><br/>
 
       <h2>{@$t 'welcome.title2'}</h2>
-      <div class="alert alert-info">{@$t 'welcome.usage1'}</div>
-      <p>{@$t 'welcome.usage2'}</p>
+      <div class="alert alert-info" domPropsInnerHTML={@$t 'welcome.required', {nodejs: '<a href="https://nodejs.org/" target="_blank">NodeJS >8.0</a>'}}></div>
+      <p>{@$t 'welcome.usage1'} {@$t 'welcome.usage2'}</p>
       <pre><code>npx @fine.sh/cli</code></pre>
       <p>{@$t 'welcome.usage3'}</p>
       <p>{@$t 'welcome.usage4'}</p>
@@ -45,6 +45,7 @@ export default
         <li><code>fine ls</code> ---   {@$t 'welcome.command2'}</li>
         <li><code>fine who</code>  ---   {@$t 'welcome.command3'}</li>
         <li><code>fine rm</code> ---   {@$t 'welcome.command4'}</li>
+        <li><code>fine report</code> ---   {@$t 'welcome.command5'}</li>
       </ul>
       <br/><br/>
 
