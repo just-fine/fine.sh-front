@@ -5,5 +5,5 @@ export default
 
   render: (h) ->
     <div class="slogan">
-      <h1>fine.sh -- generate your document site in 3 seconds</h1>
+      <h1>fine.sh -- generate your static website in 3 seconds</h1>
     </div>
