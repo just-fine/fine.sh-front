@@ -31,7 +31,6 @@ mixin_status_to_response = (obj, name, val = true) ->
     console.log res.$forbidden ->>>>>>   boolean value
 ###
 instance.interceptors.response.use (res) ->
-  return res.data if res.status is 200
   return {} if res.status is 204
   status_name = http_status[res.status] || 'unkown_error'
   res.data ?= {}

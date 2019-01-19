@@ -4,6 +4,7 @@ import routers from './routers'
 import component from './components'
 import vue_i18n from 'vue-i18n'
 import locales from '../locales'
+import './assets/global.styl'
 import 'hack'
 
 component vue

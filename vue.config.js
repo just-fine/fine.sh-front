@@ -13,4 +13,13 @@ module.exports = {
   },
 
   baseUrl: '/',
+
+  css: {
+    loaderOptions: {
+      css: {
+        localIdentName: '[name]-[hash]',
+        camelCase: 'only'
+      }
+    }
+  }
 }

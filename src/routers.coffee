@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import { slot, github, welcome, validate } from './pages/index'
+import { slot, github, welcome, validate, console_slot, console_projects } from './pages/index'
 Vue.use Router
 
 export default new Router
@@ -11,6 +11,11 @@ export default new Router
       path: '/auth', component: slot, children: [
         { path: 'github', name: 'github', component: github }
         { path: 'validate', name: 'validate', component: validate }
+      ]
+    }
+    {
+      path: '/console', component: console_slot, children: [
+        { path: '', name: 'console_projects', component: console_projects }
       ]
     }
   
